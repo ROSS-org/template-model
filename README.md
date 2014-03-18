@@ -8,4 +8,4 @@ As you develop, please replace "model" with appropriately descriptive names for 
 
 # Notes
 
-This code is based off of the [ROSS-model](http://github.com/gonise/ROSS-model) template, which works for [ROSS](http://github.com/carothersc/ROSS).
+This code is based off of the [ROSS-model](http://github.com/gonsie/ROSS-model) template, which works for [ROSS](http://github.com/carothersc/ROSS).
