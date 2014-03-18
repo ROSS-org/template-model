@@ -1,4 +1,6 @@
 INCLUDE_DIRECTORIES(${ROSS_SOURCE_DIR})
+## If you will be using the ROSSIO library
+#INCLUDE_DIRECTORIES(${ROSSIO_SOURCE_DIR})
 
 # Files you have included in your model
 SET(model_srcs
@@ -12,4 +14,7 @@ SET(model_srcs
 
 ADD_EXECUTABLE(ross-model model_main.c ${model_srcs})
 
+
 TARGET_LINK_LIBRARIES(ross-model ROSS m)
+## Alternatively, use this command with ROSSIO
+#TARGET_LINK_LIBRARIES(ross-model ROSS ROSSIO m)
