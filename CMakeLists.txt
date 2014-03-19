@@ -8,8 +8,8 @@ SET(model_srcs
 	model.h
 )
 
-# Set the executable name here: ross-model
-# You will be executing the ./ross-model binary
+# Set the executable name here: sr-model
+# You will be executing the ./sr-model binary
 # Main function (in this case) is found in model_main.c
 
 ADD_EXECUTABLE(sr-model model_main.c ${model_srcs})
