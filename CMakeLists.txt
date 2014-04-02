@@ -1,4 +1,6 @@
-INCLUDE_DIRECTORIES(${ROSS_SOURCE_DIR})
+INCLUDE_DIRECTORIES(${ROSS_SOURCE_DIR} ${ROSS_BINARY_DIR})
+## Must include binary dir for config.h
+
 ## If you will be using the ROSSIO library add this
 #INCLUDE_DIRECTORIES(${ROSSIO_SOURCE_DIR})
 
