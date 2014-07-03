@@ -198,6 +198,7 @@ tw_peid model_map(tw_lpid gid){
 tw_lptype model_lps[] = {
   {
     (init_f) model_init,
+    (pre_run_f) NULL,
     (event_f) model_event,
     (revent_f) model_event_reverse,
     (final_f) model_final,
