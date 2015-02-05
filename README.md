@@ -1,11 +1,15 @@
-# Installation
-
-See the [Senior](http://github.com/gonsie/SR) repository for instructions on how to integrate your model with SR.
-
 # Usage
 
+If you are creating your own model feel free to fork this repository.
 As you develop, please replace "model" with appropriately descriptive names for your variables, files, and functions.
 
-# Notes
+# Installation
 
-This code is based off of the [ROSS-model](http://github.com/gonsie/ROSS-model) template, which works for [ROSS](http://github.com/carothersc/ROSS).
+This repository is automatically linked with [ROSS](http://github.com/carothers/ROSS) and can be downloaded using the following commands:
+```
+git clone http://github.com/carothers/ROSS.git
+cd ROSS
+git submodule init
+git submodule update
+```
+
