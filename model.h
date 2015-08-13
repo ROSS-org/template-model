@@ -34,7 +34,7 @@ typedef struct {
 } state;
 
 
-//Command Line Arguments
+//Command Line Argument declarations
 extern unsigned int setting_1;
 
 //Global variables used by both main and driver
