@@ -1,5 +1,6 @@
 //The C main file for a ROSS model
 //This file includes:
+// - definition of the LP types
 // - command line argument setup
 // - a main function
 
