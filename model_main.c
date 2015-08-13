@@ -71,11 +71,15 @@ int model_main (int argc, char* argv[]) {
 
 	//set up LPs within ROSS
 	tw_define_lps(num_lps_per_pe, sizeof(message), 0);
-	// g_tw_nlp gets set by tw_define_lps
+	// note that g_tw_nlp gets set here by tw_define_lps
 
-	for (i = 0; i < g_tw_nlp; i++) {
-		tw_lp_settype(i, &model_lps[0]);
-	}
+	// IF there are multiple LP types
+	//    you should define the mapping of GID -> lptype index
+	//g_tw_lp_typemap = &model_typemap;
+
+	// set the global variable and initialize each LP's type
+	g_tw_lp_types = model_lps;
+	tw_lp_setup_types();
 
 	// Do some file I/O here? on a per-node (not per-LP) basis
 
