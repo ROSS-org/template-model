@@ -1,21 +1,15 @@
 //The C driver file for a ROSS model
 //This file includes:
-// - initialized command line arguments
-// - an initialization function
-// - a forward event function
-// - a reverse event function
-// - a finalization function
-// - all custom mapping functions (if needed)
-// - the LP type definition
+// - an initialization function for each LP type
+// - a forward event function for each LP type
+// - a reverse event function for each LP type
+// - a finalization function for each LP type
 
 //Includes
 #include <stdio.h>
 
 #include "ross.h"
 #include "model.h"
-
-//Initialize command line arguments
-unsigned int setting_1 = 0;
 
 //Helper Functions
 void SWAP (double *a, double *b) {
