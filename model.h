@@ -41,7 +41,7 @@ extern unsigned int setting_1;
 // - this defines the LP types
 extern tw_lptype model_lps[];
 
-/* 
+/*
 //Custom mapping prototypes
 void model_cutom_mapping(void);
 tw_lp * model_mapping_to_lp(tw_lpid lpid);
