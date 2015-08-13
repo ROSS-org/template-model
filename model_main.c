@@ -7,6 +7,22 @@
 #include "ross.h"
 #include "model.h"
 
+// Define LP types
+//   these are the functions called by ROSS for each LP
+//   multiple sets can be defined (for multiple LP types)
+tw_lptype model_lps[] = {
+  {
+    (init_f) model_init,
+    (pre_run_f) NULL,
+    (event_f) model_event,
+    (revent_f) model_event_reverse,
+    (final_f) model_final,
+    (map_f) model_map,
+    sizeof(state)
+  },
+  { 0 },
+};
+
 //add your command line opts
 const tw_optdef model_opts[] = {
 	TWOPT_GROUP("ROSS Model"),

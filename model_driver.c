@@ -192,17 +192,3 @@ tw_peid model_map(tw_lpid gid){
   return (tw_peid) gid / g_tw_nlp;
 }
 //*/
-
-//This defines the fuctions used by the LPs
-//   multiple sets can be defined (for multiple LP types)
-tw_lptype model_lps[] = {
-  {
-    (init_f) model_init,
-    (pre_run_f) NULL,
-    (event_f) model_event,
-    (revent_f) model_event_reverse,
-    (final_f) model_final,
-    (map_f) model_map,
-    sizeof(state)
-  },
-  { 0 },
