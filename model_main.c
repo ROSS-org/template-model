@@ -23,6 +23,9 @@ tw_lptype model_lps[] = {
   { 0 },
 };
 
+//Define command line arguments default values
+unsigned int setting_1 = 0;
+
 //add your command line opts
 const tw_optdef model_opts[] = {
 	TWOPT_GROUP("ROSS Model"),
