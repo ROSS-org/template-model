@@ -1,8 +1,8 @@
 INCLUDE_DIRECTORIES(${ROSS_SOURCE_DIR} ${ROSS_BINARY_DIR})
 ## Must include binary dir for config.h
 
-## If you will be using the ROSSIO library add this
-#INCLUDE_DIRECTORIES(${ROSSIO_SOURCE_DIR})
+## If you will be using the RIO library add this
+#INCLUDE_DIRECTORIES(${RIO_SOURCE_DIR} ${RIO_BINARY_DIR})
 
 # Files you have included in your model
 SET(model_srcs
@@ -10,13 +10,10 @@ SET(model_srcs
 	model.h
 )
 
-# Set the executable name here: sr-model
-# You will be executing the ./sr-model binary
-# Main function (in this case) is found in model_main.c
+# Set the executable name here: model
+# You will be executing the ./model binary
+ADD_EXECUTABLE(model ${model_srcs})
 
-ADD_EXECUTABLE(sr-model model_main.c ${model_srcs})
-
-
-TARGET_LINK_LIBRARIES(sr-model ROSS m)
-## Alternatively, use this command with ROSSIO
-#TARGET_LINK_LIBRARIES(sr-model ROSS ROSSIO m)
+TARGET_LINK_LIBRARIES(model ROSS m)
+## Alternatively, use this command with RIO
+#TARGET_LINK_LIBRARIES(model ROSS RIO m)
