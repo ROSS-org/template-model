@@ -41,6 +41,15 @@ extern unsigned int setting_1;
 // - this defines the LP types
 extern tw_lptype model_lps[];
 
+//Function Declarations
+// defined in model_driver.c:
+extern void model_init(state *s, tw_lp *lp);
+extern void model_event(state *s, tw_bf *bf, message *in_msg, tw_lp *lp);
+extern void model_event_reverse(state *s, tw_bf *bf, message *in_msg, tw_lp *lp);
+extern void model_final(state *s, tw_lp *lp);
+// defined in model_map.c:
+extern tw_peid model_map(tw_lpid gid);
+
 /*
 //Custom mapping prototypes
 void model_cutom_mapping(void);
