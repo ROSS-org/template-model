@@ -5,9 +5,9 @@ As you develop, please replace "model" with appropriately descriptive names for 
 
 # Installation
 
-This repository is automatically linked with [ROSS](http://github.com/carothersc/ROSS) and can be downloaded using the following commands:
+This repository is automatically linked with [ROSS](http://github.com/ross-org/ROSS) and can be downloaded using the following commands:
 ```
-git clone http://github.com/carothersc/ROSS.git
+git clone http://github.com/ross-org/ROSS.git
 cd ROSS
 git submodule init
 git submodule update
