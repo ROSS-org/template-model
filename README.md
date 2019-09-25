@@ -12,3 +12,12 @@ cd template-model
 git submodule init
 git submodule update
 ```
+
+# Start from Scratch
+
+To initialize ROSS as a submodule in a new repo run:
+
+```
+git submodule add https://github.com/ROSS-org/ROSS
+git commit -m "add ROSS as a submodule"
+```
