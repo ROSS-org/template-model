@@ -7,9 +7,8 @@ As you develop, please replace "model" with appropriately descriptive names for 
 
 This repository is automatically linked with [ROSS](http://github.com/ross-org/ROSS) and can be downloaded using the following commands:
 ```
-git clone http://github.com/ross-org/ROSS.git
-cd ROSS
+git clone http://github.com/ross-org/template-model.git
+cd template-model
 git submodule init
 git submodule update
 ```
-
