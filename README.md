@@ -15,4 +15,5 @@ ln -s ../../template-model ./
 cd ../
 mkdir build
 cmake ../ -DROSS_BUILD_MODELS=ON
+make
 ```
